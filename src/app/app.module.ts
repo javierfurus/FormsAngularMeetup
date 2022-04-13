@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { ContentTableComponent } from './content-table/content-table.component';
 import { HighlightOnHoverDirective } from './directives/highlight.directive';
 import { FormComponent } from './form/form.component';
+import { ReactiveFormComponent } from './reactiveform/reactiveform.component';
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { FormComponent } from './form/form.component';
     ContentTableComponent,
     HighlightOnHoverDirective,
     FormComponent,
+    ReactiveFormComponent,
   ],
   bootstrap: [AppComponent],
   providers: [PostsService],
