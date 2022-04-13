@@ -1,0 +1,44 @@
+<mat-grid-list cols="2" rowHeight="1:1.5" gutterSize="5px">
+  <div *ngFor="let data of posts">
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div
+            mat-card-avatar
+            class="example-header-image"
+            [ngStyle]="{
+              'background-image': 'url(' + data.owner.picture + ')'
+            }"
+          ></div>
+          <mat-card-title appHighlightOnHover="lime" defaultColor="black"
+            >{{ data.owner.firstName }}
+            {{ data.owner.lastName }}</mat-card-title
+          >
+          <mat-card-subtitle>{{ data.publishDate | date }}</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          mat-card-image
+          class="card-image"
+          [src]="data.image"
+          alt="Photo of a Shiba Inu"
+        />
+        <mat-card-content>
+          <p>
+            {{ data.text }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-button
+            (click)="
+              onUserClicked('You liked the post of ' + data.owner.firstName)
+            "
+          >
+            LIKE
+          </button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>

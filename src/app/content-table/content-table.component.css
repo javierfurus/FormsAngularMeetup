@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 400px;
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+}
+
+mat-card img {
+  object-fit: contain;
+  height: 60%;
+}
+
+.example-header-image {
+  background-size: cover;
+}
