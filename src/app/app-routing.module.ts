@@ -9,8 +9,8 @@ import { UserFeedComponent } from './user-feed/user-feed.component';
 const routes: Routes = [
   { path: 'test', component: TestComponentComponent },
   { path: 'user-feed', component: UserFeedComponent },
+  { path: 'form', component: FormComponent },
   { path: '', component: HomeComponent },
-  { path: '', component: FormComponent },
 ];
 
 @NgModule({
