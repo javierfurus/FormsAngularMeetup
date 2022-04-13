@@ -1,1 +1,14 @@
-<p>Form works</p>
+<h1>Template-driven Form Example (with bi-directional data binding):</h1>
+<form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+  <p>
+    <label>First Name:</label>
+    <input type="text" [(ngModel)]="user.firstName" required />
+  </p>
+  <p>
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="user.password" required />
+  </p>
+  <p>
+    <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  </p>
+</form>

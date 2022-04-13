@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+interface UserVM {
+  firstName: Event;
+  password: Event;
+}
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
 })
-export class FormComponent implements OnInit {
+export class FormComponent {
+  user: UserVM;
 
-  constructor() { }
-
-  ngOnInit() {
+  onSubmitTemplateBased() {
+    console.log(this.user);
   }
-
 }
