@@ -11,7 +11,7 @@ interface UserVM {
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-  user: UserVM;
+  user: any = {};
 
   onSubmitTemplateBased() {
     console.log(this.user);

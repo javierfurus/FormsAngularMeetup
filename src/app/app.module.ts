@@ -15,6 +15,7 @@ import { TestComponentComponent } from './test-component/test-component.componen
 import { HomeComponent } from './home/home.component';
 import { ContentTableComponent } from './content-table/content-table.component';
 import { HighlightOnHoverDirective } from './directives/highlight.directive';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import { HighlightOnHoverDirective } from './directives/highlight.directive';
     HomeComponent,
     ContentTableComponent,
     HighlightOnHoverDirective,
+    FormComponent,
   ],
   bootstrap: [AppComponent],
   providers: [PostsService],
